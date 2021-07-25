@@ -1,0 +1,405 @@
+.d {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url("../Images/au_6.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 250px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: serif;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: maroon;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 80%;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: serif;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.text-box h1 {
+  font-size: 40px;
+}
+
+.dh-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 36px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.dh-btn:hover {
+  border: 1px solid maroon;
+  background: maroon;
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: maroon;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/*Alumni*/
+.Alumni {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.Alumni h1 {
+  font-family: serif;
+  color: maroon;
+}
+p {
+  font-family: serif;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+.Alumni-col {
+  color: maroon;
+  font-family: serif;
+  flex-basis: 30%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.Alumni-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/*Motivation*/
+.motivation {
+  width: 80%;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-family: serif;
+}
+
+.motivation h1 {
+  color: maroon;
+}
+.motiv-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.motiv-col img {
+  width: 100%;
+}
+
+/*contact us*/
+.contact {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/connect.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.contact h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: serif;
+}
+
+@media (max-width: 700px) {
+  .contact h1 {
+    font-size: 20px;
+  }
+}
+
+/*about us*/
+.about {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  font-family: serif;
+}
+
+.about h5 {
+  font-family: serif;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 1000;
+}
+
+.icons .fa {
+  color: maroon;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.fa-heart-o {
+  color: maroon;
+}
+
+/*New tab of About*/
+.header3 {
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url(../Images/au_2.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: serif;
+}
+.header3 h1 {
+  margin-top: 100px;
+}
+
+.info {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.info-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.info-col img {
+  width: 100%;
+}
+.info h2 {
+  font-family: serif;
+  color: maroon;
+}
+
+.info p {
+  font-family: serif;
+}
+
+/*New tab of Alumni*/
+.sub-header {
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../Images/grad.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: serif;
+}
+
+.sub-header h1 {
+  margin-top: 100px;
+}
+
+.news h1 {
+  margin-top: 100px;
+  font-family: serif;
+  text-align: center;
+  color: maroon;
+}
+
+/*New tab of Contact us*/
+.header2 {
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
+    url(../Images/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: serif;
+}
+.header2 h1 {
+  margin-top: 100px;
+}
+
+.Cont {
+  width: 80%;
+  margin: auto;
+}
+
+.cont-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.cont-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cont-col div .fa {
+  font-size: 28px;
+  color: maroon;
+  margin: 10px;
+  margin-right: 30px;
+}
+
+.cont-col div h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+
+.Cont h3 {
+  font-family: serif;
+  font-weight: 700;
+}
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  width: 100%;
+}
+
+.d-btn {
+  color: maroon;
+  border: 1px solid maroon;
+  background: transparent;
+}
+.d-btn:hover {
+  color: white;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  box-sizing: border-box;
+}
+
+.comment-form button {
+  margin: 10px 0;
+}
