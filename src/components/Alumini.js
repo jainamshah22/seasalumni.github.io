@@ -48,7 +48,7 @@ function Alumini() {
       </section>
 
       <section className="Alumni">
-        <h1></h1>
+        
 
         <div className="row">
           <div className="Alumni-col">
